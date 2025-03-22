@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .calculator {
+        display: inline-block;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Kalkulator</h2>
+      <input type="text" id="num1" placeholder="Masukkan angka pertama" />
+      <select id="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+        <option value="%">Modulus</option>
+        <option value="^">Pangkat</option>
+        <option value="√">Akar</option>
+      </select>
+      <input type="text" id="num2" placeholder="Masukkan angka kedua" />
+      <button onclick="calculate()">Hitung</button>
+      <h3>Hasil: <span id="result">0</span></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
