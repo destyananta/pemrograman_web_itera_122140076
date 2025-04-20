@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuliah Tracker + Reminder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Kuliah Tracker + Reminder</h1>
+
+  <section id="schedule-section">
+  <h2>Jadwal Kuliah Mingguan</h2>
+
+  <form id="filter-form">
+    <label for="filter-hari">Filter Hari:</label>
+    <select id="filter-hari">
+      <option value="">Semua Hari</option>
+      <option>Senin</option>
+      <option>Selasa</option>
+      <option>Rabu</option>
+      <option>Kamis</option>
+      <option>Jumat</option>
+    </select>
+  </form>
+
+  <form id="schedule-form">
+    <!-- input mata kuliah -->
+  </form>
+
+  <div id="schedule-container"></div>
+</section>
+
+
+  <section id="task-section">
+    <h2>Reminder Tugas & Ujian</h2>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Nama Tugas" required />
+      <input type="datetime-local" id="task-deadline" required />
+      <button type="submit">Tambah Tugas</button>
+    </form>
+    <div id="task-container"></div>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Global */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #f0f4f8;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1e40af;
+  border-bottom: 2px solid #c7d2fe;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* Section Container */
+section {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+form input,
+form select {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  flex: 1 1 200px;
+}
+
+form button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #2563eb;
+}
+
+/* List Items */
+.jadwal-item,
+.tugas-item {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 5px solid #60a5fa;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+}
+
+.jadwal-item {
+  border-left-color: #a5b4fc;
+}
+
+.tugas-item input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+.jadwal-item span,
+.tugas-item span {
+  font-size: 1rem;
+}
+
+.tugas-item em {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* Buttons */
+button {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #cbd5e1;
+}
+
+.tugas-item button,
+.jadwal-item button {
+  align-self: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+#filter-form {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
