@@ -1,0 +1,56 @@
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Jarak antar form */
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4A90E2;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #357ABD;
+}
+
+button[type="button"] {
+  width: 100%;
+  background-color: #e1e1e1;
+  color: #333;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+button[type="button"]:hover {
+  background-color: #c1c1c1;
+}
